@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Registration-form</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
@@ -10,8 +11,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-  <section class="contact pad-t-2 pad-b-2 island">
-    <div class="max-length">
+  <section class="grid grid-middle contact pad-t-2 pad-b-2 island">
+    <div class="unit xs-1 s-1 m-1 max-length">
       <h1>Want to go to Mars?</h1>
       <p>We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
       <p>Personal details</p>
@@ -22,8 +23,8 @@
           <input id="name" name="name">
         </div>
         <div class="push">
-          <label for="age">Age</label>
-          <input id="age" type="age">
+          <label for="number">Age</label>
+          <input id="number" type="number">
         </div>
         <div class="push">
           <label for="email">Email</label>
@@ -32,15 +33,32 @@
         <div class="push">
           <label for="physical-fitness">Physical fitness</label>
           <select id="physical-fitness" name="_physical-fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
           </select>
         </div>
         <div class="push">
-          <label for="address">Address</label>
-          <input id="address" type="address">
+          <label for="text">Address</label>
+          <input class="island" id="text" type="text">
         </div>
       </form>
+
       <p>Mission statement</p>
+
+      <form>
+        <div class="push">
+          <label for="text">Why do you want to go to Mars?</label>
+          <input class="island" id="text" type="text">
+        </div>
+
+        <div>
+          <button class="btn btn-dark" type="submit">Register for the trip!</button>
+        </div>
+      </form>
     </div>
+  </section>
 
 
 </body>
